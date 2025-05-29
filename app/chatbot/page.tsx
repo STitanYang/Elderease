@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BadgeCheck, Clock, MessageCircle, MessagesSquare, Phone, Shield, ThumbsUp } from "lucide-react";
@@ -11,13 +12,15 @@ export default function ChatbotPage() {
         <div className="px-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-green-700 mb-6">
-              Kelompok 5 Telegram Chatbot
+              Elderease Telegram Chatbot
             </h1>
             <p className="text-xl text-gray-700 mb-8">
               Get instant assistance, information, and support through our easy-to-use Telegram chatbot.
             </p>
             <Button size="lg" className="bg-green-600 hover:bg-green-700">
+              <Link href="http://t.me/EldereaseCare_bot">
               Open Chatbot in Telegram
+              </Link>
             </Button>
           </div>
         </div>
@@ -107,8 +110,8 @@ export default function ChatbotPage() {
                   },
                   {
                     step: "2",
-                    title: "Search for GreenCare Bot",
-                    description: "In the search field, type @GreenCareBot and select our official chatbot."
+                    title: "Search for Elderease Bot",
+                    description: "In the search field, type @Elderease and select our official chatbot."
                   },
                   {
                     step: "3",
@@ -137,7 +140,9 @@ export default function ChatbotPage() {
               
               <div className="mt-8">
                 <Button size="lg" className="bg-green-600 hover:bg-green-700">
+                  <Link href="http://t.me/EldereaseCare_bot">
                   Try the Chatbot Now
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -277,7 +282,9 @@ export default function ChatbotPage() {
               Experience faster support, easy scheduling, and instant information about elderly care services.
             </p>
             <Button size="lg" variant="secondary" className="bg-white text-green-700 hover:bg-green-50">
+              <Link href="http://t.me/EldereaseCare_bot">
               Launch Telegram Chatbot
+              </Link>
             </Button>
           </div>
         </div>

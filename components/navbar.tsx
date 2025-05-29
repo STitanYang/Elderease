@@ -42,15 +42,14 @@ export default function Navbar() {
         : "bg-transparent py-4"
     )}>
       <div className="px-10 flex h-14 items-center justify-between">
-        <Image
+        <Link href="/" className="flex items-center space-x-2">
+           <Image
             src="/logo.png" // Path relative to the 'public' folder
             alt="Elderease Logo"
             className="h-6 w-6" // You can also use Tailwind classes for size
             width={100} 
             height={100}
           />
-        <Link href="/" className="flex items-center space-x-2">
-          
           <span className="font-bold text-xl text-green-600">Elderease</span>
         </Link>
         
@@ -72,13 +71,11 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <Link href="/contact" className="flex items-center gap-1 text-green-600 hover:text-green-700 transition-colors">
-            <Phone className="h-4 w-4" />
-            <span className="text-sm font-medium">Contact Us</span>
+          <Link href="http://wa.me/6285700277534">
+            <Button className="bg-green-600 hover:bg-green-700">
+              Book Now
+            </Button>
           </Link>
-          <Button className="bg-green-600 hover:bg-green-700">
-            Book Now
-          </Button>
         </div>
 
         <Sheet>

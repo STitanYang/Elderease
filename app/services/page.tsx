@@ -17,7 +17,7 @@ export default function ServicesPage() {
         "Mobility assistance",
         "Toileting and incontinence care"
       ],
-      image: "https://images.pexels.com/photos/7551741/pexels-photo-7551741.jpeg"
+      image: "/services-personalcare.jpg"
     },
     {
       id: "medication-management",
@@ -30,7 +30,7 @@ export default function ServicesPage() {
         "Medication organization",
         "Side effect monitoring"
       ],
-      image: "https://images.pexels.com/photos/7655118/pexels-photo-7655118.jpeg"
+      image: "/services-medicationmanagement.jpg"
     },
     {
       id: "companionship",
@@ -56,7 +56,7 @@ export default function ServicesPage() {
         "Stroke recovery",
         "Chronic illness management"
       ],
-      image: "https://images.pexels.com/photos/7551617/pexels-photo-7551617.jpeg"
+      image: "services-specializedcare.jpg"
     },
   ];
 
@@ -153,13 +153,13 @@ export default function ServicesPage() {
                     </div>
                     
                     <Button asChild className="bg-green-600 hover:bg-green-700">
-                      <Link href="/contact">
+                      <Link href="http://wa.me/6285700277534">
                         Inquire About Service
                       </Link>
                     </Button>
                   </div>
                   
-                  <div className="w-full lg:w-2/5 relative h-64 order-1 lg:order-2">
+                  <div className="w-25 lg:w-2/5 relative h-64 order-1 lg:order-2">
                     <Image
                       src={service.image}
                       alt={service.title}
@@ -224,7 +224,7 @@ export default function ServicesPage() {
                     asChild 
                     className={`w-full ${pkg.featured ? 'bg-green-600 hover:bg-green-700' : 'bg-green-600/90 hover:bg-green-600'}`}
                   >
-                    <Link href="/contact">
+                    <Link href="http://wa.me/6285700277534">
                       Get Started
                     </Link>
                   </Button>
@@ -241,15 +241,15 @@ export default function ServicesPage() {
           <div className="bg-white border border-green-100 rounded-xl p-8 md:p-12 max-w-5xl mx-auto">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-green-700 mb-4">
-                Need a Custom Care Plan?
+                Looking for a Different Care Package?
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                We understand that every individual has unique needs. Contact us to create a personalized care plan tailored specifically for your loved one.
+                If you have a special request or need a custom care plan, feel free to contact us. We’re happy to create the right solution for your elderly.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
-                <Link href="/contact">
+                <Link href="http://wa.me/6285700277534">
                   Contact Us
                 </Link>
               </Button>
