@@ -39,7 +39,7 @@ export default function ArticlesPage() {
     {
       id: "dementia-communication-strategies",
       title: "Effective Communication Strategies for Dementia Patients",
-      excerpt: "Learn practical techniques to improve communication with loved ones experiencing cognitive decline.",
+      excerpt: "Learn practical techniques to improve communication with elderly experiencing cognitive decline.",
       category: "Dementia Care",
       image: "https://images.pexels.com/photos/7551622/pexels-photo-7551622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       date: "June 10, 2023",
@@ -88,19 +88,9 @@ export default function ArticlesPage() {
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-green-700 mb-6">
               Health & Care Articles
             </h1>
-            <p className="text-xl text-gray-700 mb-8">
+            <p className="text-xl text-gray-700">
               Expert advice and insights on elderly care, health, and wellness to help you provide the best care for your loved ones.
             </p>
-            
-            <div className="relative max-w-md mx-auto">
-              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <Search className="h-5 w-5 text-gray-400" />
-              </div>
-              <Input 
-                placeholder="Search articles..." 
-                className="pl-10 bg-white border-green-600/50 focus-visible:ring-green-600"
-              />
-            </div>
           </div>
         </div>
       </section>

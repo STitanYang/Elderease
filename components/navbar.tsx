@@ -10,12 +10,12 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import Image from 'next/image';
 import { Heart, Menu, Phone } from "lucide-react";
 
 const routes = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
-  { href: "/caregivers", label: "Choose Caregiver" },
   { href: "/articles", label: "Articles" },
   { href: "/chatbot", label: "Telegram Chatbot" },
   { href: "/team", label: "Our Team" },
@@ -42,8 +42,15 @@ export default function Navbar() {
         : "bg-transparent py-4"
     )}>
       <div className="px-10 flex h-14 items-center justify-between">
+        <Image
+            src="/logo.png" // Path relative to the 'public' folder
+            alt="Elderease Logo"
+            className="h-6 w-6" // You can also use Tailwind classes for size
+            width={100} 
+            height={100}
+          />
         <Link href="/" className="flex items-center space-x-2">
-          <Heart className="h-6 w-6 text-green-600" />
+          
           <span className="font-bold text-xl text-green-600">Elderease</span>
         </Link>
         

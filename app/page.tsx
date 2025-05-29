@@ -157,60 +157,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Testimonials */}
-      <section className="py-16 bg-green-50">
-        <div className="px-10">
-          <div className="text-center max-w-xl mx-auto mb-12">
-            <h2 className="text-3xl font-bold text-green-700 mb-4">
-              What Families Say
-            </h2>
-            <p className="text-gray-600">
-              Don't just take our word for it. Hear from families who have experienced our care.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                quote: "The caregivers from GreenCare have been a blessing for our family. They treat my mother with dignity and compassion.",
-                name: "Anita Wijaya",
-                role: "Daughter",
-              },
-              {
-                quote: "I was impressed by how quickly the team understood my father's needs. The personalized care has made all the difference.",
-                name: "Budi Santoso",
-                role: "Son",
-              },
-              {
-                quote: "The peace of mind that comes from knowing my aunt is in good hands is priceless. Thank you GreenCare team!",
-                name: "Diana Putri",
-                role: "Niece",
-              },
-            ].map((testimonial, i) => (
-              <div key={i} className="border rounded-lg overflow-hidden bg-white p-6 shadow-sm">
-                <div className="flex items-center text-yellow-400 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-600 mb-6 italic">"{testimonial.quote}"</p>
-                <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3">
-                    <span className="text-green-600 font-semibold">
-                      {testimonial.name.charAt(0)}
-                    </span>
-                  </div>
-                  <div>
-                    <p className="font-medium">{testimonial.name}</p>
-                    <p className="text-sm text-gray-500">{testimonial.role}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

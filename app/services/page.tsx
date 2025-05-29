@@ -56,34 +56,8 @@ export default function ServicesPage() {
         "Stroke recovery",
         "Chronic illness management"
       ],
-      image: "https://images.pexels.com/photos/7551692/pexels-photo-7551692.jpeg"
+      image: "https://images.pexels.com/photos/7551617/pexels-photo-7551617.jpeg"
     },
-    {
-      id: "respite-care",
-      title: "Respite Care",
-      icon: ThumbsUp,
-      description: "Our respite care services provide temporary relief to family caregivers, allowing them to take a break while ensuring their loved ones receive quality care.",
-      features: [
-        "Short-term care",
-        "Family caregiver relief",
-        "Flexible scheduling",
-        "Peace of mind"
-      ],
-      image: "https://images.pexels.com/photos/7551646/pexels-photo-7551646.jpeg"
-    },
-    {
-      id: "post-hospital-care",
-      title: "Post-Hospital Care",
-      icon: Activity,
-      description: "Our post-hospital care services help seniors recover safely at home after hospitalization, reducing the risk of readmission and supporting a successful recovery.",
-      features: [
-        "Discharge plan adherence",
-        "Medication management",
-        "Wound care assistance",
-        "Rehabilitation support"
-      ],
-      image: "https://images.pexels.com/photos/7551773/pexels-photo-7551773.jpeg"
-    }
   ];
 
   const carePackages = [
@@ -91,20 +65,21 @@ export default function ServicesPage() {
       title: "Basic Care",
       price: "Rp 500.000",
       duration: "per week",
-      description: "Essential care services for seniors with minimal assistance needs",
+      description: "Essential care services for elderly with assistance needs",
       features: [
         "2 visits per week (3 hours each)",
         "Personal care assistance",
         "Light housekeeping",
         "Medication reminders",
-        "Companionship"
+        "Companionship",
+        "Specialized care"
       ]
     },
     {
       title: "Standard Care",
-      price: "Rp 950.000",
+      price: "Rp 1.150.000",
       duration: "per week",
-      description: "Comprehensive care for seniors requiring regular assistance",
+      description: "Comprehensive care for elderly requiring regular assistance",
       features: [
         "4 visits per week (4 hours each)",
         "All Basic Care services",
@@ -117,9 +92,9 @@ export default function ServicesPage() {
     },
     {
       title: "Premium Care",
-      price: "Rp 1.800.000",
+      price: "Rp 2.500.000",
       duration: "per week",
-      description: "Full-service care for seniors with advanced needs",
+      description: "Full-service care for elderly with advanced needs",
       features: [
         "Daily visits (6 hours each)",
         "All Standard Care services",
@@ -194,7 +169,7 @@ export default function ServicesPage() {
                   </div>
                 </div>
 
-                {index < services.length - 1 && (
+                {index < services.length && (
                   <div className="border-b border-gray-200 my-12"></div>
                 )}
               </div>
@@ -275,12 +250,7 @@ export default function ServicesPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
                 <Link href="/contact">
-                  Schedule a Consultation
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-green-600 text-green-600 hover:bg-green-50">
-                <Link href="/caregivers">
-                  Meet Our Caregivers
+                  Contact Us
                 </Link>
               </Button>
             </div>
