@@ -149,7 +149,7 @@ export default function ChatbotPage() {
             
             <div className="relative h-[500px] shadow-lg rounded-xl overflow-hidden">
               <Image
-                src="https://images.pexels.com/photos/5417675/pexels-photo-5417675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="/telegram.jpeg"
                 alt="Chatbot interface"
                 fill
                 style={{ objectFit: "cover" }}
